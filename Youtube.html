@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Your House</title>
+    <style>
+        .banner {
+            width: 100%;
+            height: 100vb;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgb(97 41 50 / 18%)),url(3d-house-decoration.jpg);
+            background-size: contain;
+            background-position: center;
+
+        }
+
+        img {
+            width: 10%;
+            background-color: rgb(209, 195, 177)
+        }
+
+        .navbar {
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .logo {
+            width: 120px;
+            cursor: pointer;
+
+
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 15px;
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: rgb(89, 6, 6);
+            font-size: large;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 0;
+            background-color: rgb(18, 3, 33);
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+
+        }
+
+        .navbar ul li:hover::after {
+            width: 100%;
+
+        }
+
+        .content {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: rgb(55, 35, 5);
+        }
+
+        .content h1 {
+            font-size: 70px;
+            margin-top: 80px;
+            margin-right: 200px;
+            margin-bottom: 60px;
+        }
+
+        .content p {
+            margin: 20px auto;
+            font-weight: bolder;
+            line-height: 25px;
+            margin-right: 200px;
+            background-color: rgb(199, 199, 195);
+
+        }
+
+        button {
+            margin-right: 200px;
+            width: 200px;
+            padding: 10px 0;
+            text-align: center;
+            margin: 20px 30;
+            border-radius: 100px;
+            font-weight: bold;
+            border: 2px solid #0e0404;
+            background: transparent;
+            color: rgb(81, 5, 5);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        span {
+            background-color: rgb(69, 69, 66);
+            width: 0%;
+            border-radius: 25px;
+            height: 100%;
+
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        button:hover span {
+            width: 100%;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="—Pngtree—red and black logo_5517319.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Bedroom</a></li>
+                <li><a href="#">Kitchen</a></li>
+                <li><a href="#">Backyard</a></li>
+                <li><a href="#">Dining</a></li>
+
+
+
+            </ul>
+            <div class="content">
+                <h1>DESIGN YOUR HOUSE</h1>
+                <p>Subscribe easy tutorials youtube channel to watch more videos,<br> press the below icon to get latest
+                    updates </p>
+                <div>
+                    <button type="button1"> <span></span> WATCH MORE</button>
+                    <button type="button2"><span></span>SUBSCRIBE</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
